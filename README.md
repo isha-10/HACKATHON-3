@@ -212,6 +212,55 @@ Enhanced Checkout Flow to minimize friction in the buying process.
 
 
 
+Day 6: Deployment Preparation and Staging Environment Setup
+Before launching the marketplace on Day 7, Day 6 was dedicated to setting up a staging environment, ensuring a smooth transition from development to production. This involved configuring hosting platforms, connecting repositories, and testing the platform in a real-world environment.
+
+1. Setting Up the Staging Environment
+A staging environment is a production-like setup where the application can be tested before going live. This helps catch issues early and prevent failures in production.
+
+Hosting & Deployment Configuration
+Selected Hosting Provider:
+
+Vercel (ideal for Next.js with automatic optimizations).
+Netlify (alternative for static deployments).
+Railway/DigitalOcean/AWS (for more control over backend services).
+Connecting GitHub Repository to Hosting Platform:
+
+Enabled continuous deployment by linking the repository.
+Configured automatic deployments for new commits to the staging branch.
+Build & Deployment Settings:
+
+Ensured all environment variables were correctly set up.
+Configured CI/CD pipelines to build and test before deployment.
+3. Testing in the Staging Environment
+With the staging environment live, rigorous testing was performed:
+
+End-to-End (E2E) Testing
+
+Simulated user flows (browsing, checkout, profile updates).
+Used Cypress or Playwright for automated testing.
+Performance Testing
+
+Monitored load times, API response times, and caching efficiency.
+Optimized with Next.js Incremental Static Regeneration (ISR).
+Security Testing
+
+Verified authentication flow and access control (NextAuth.js, Firebase).
+Checked SSL/TLS encryption and secured API keys.
+Database & API Connectivity Checks
+
+Ensured Sanity CMS, Stripe, and other APIs worked without downtime.
+Validated database migrations were successful.
+4. Final Staging Readiness Checklist
+✅ Hosting platform set up with staging domain.
+✅ GitHub repository connected with automated deployments.
+✅ Environment variables correctly configured.
+✅ Database and API integrations tested in staging.
+✅ Security, performance, and UI checks completed.
+
+
+
+
 Day 7: Live Deployment and Post-Launch Practices
 The final day of the hackathon focused on deploying the marketplace to a live production environment, ensuring it was secure, scalable, and operationally ready. Additionally, post-launch strategies such as branding, marketing, and business partnerships were explored to position the marketplace for long-term success.
 
